@@ -1,0 +1,317 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111; /* Dark background for a professional look */
+    color: #fff;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+}
+
+h1, h2, h3 {
+    color: #fff;
+    margin: 0;
+}
+
+/* Header / Navbar */
+header {
+    background: #333; /* Lighter contrast for the header */
+    padding: 1.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem; /* Increase the space between navbar items */
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem; /* Increased gap between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #999; /* Light grey for links */
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1dbf73; /* Bright green accent color for hover */
+}
+
+/* Hero Section */
+section#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222; /* Slightly lighter background for contrast */
+    padding: 4rem 2rem;
+    color: #fff;
+    text-align: left;
+}
+
+section#about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+section#about p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #ccc; /* Soft grey for text */
+}
+
+section#about img {
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section Image */
+.about-image {
+    margin-left: 2rem;
+}
+
+.about-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styles */
+section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #222; /* Uniform background for sections */
+    color: #ccc;
+}
+
+section h2 {
+    color: #1dbf73; /* Green accent color for headings */
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+h3::before {
+    content: "💻 "; /* Laptop emoji for tech skills */
+    font-size: 1.6rem;
+}
+
+/* Add Telephone Emoji to h2 in Contact Section */
+.contact-heading::before {
+    content: "📞 "; /* Telephone emoji for Contact section */
+    font-size: 1.6rem;
+}
+
+/* Ensure other headings don't have emojis */
+h2::before {
+    content: ""; /* Clear any emoji for other h2 elements */
+}
+
+/* Skills Section */
+#skills {
+    background: #2a2a2a; /* Dark background */
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#skills h2 {
+    color: #1dbf73; /* Green accent color */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#skills p {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    background: #333;
+    padding: 2rem;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.skill-item h3 {
+    font-size: 1.8rem;
+    color: #1dbf73; /* Green accent color */
+    margin-bottom: 1rem;
+}
+
+.skill-item p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Projects Section */
+/* Projects Section */
+.projects-section {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: left; /* Change text alignment to left */
+}
+
+.projects-header h2 {
+    color: #1dbf73; /* Green accent color for header */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects-header p {
+    color: #bbb;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align items to the top */
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 2rem; /* Add some left margin for spacing */
+}
+
+.project-description h3 {
+    font-size: 2rem;
+    color: #1dbf73; /* Green accent color for subheading */
+    margin-bottom: 1rem;
+}
+
+.project-description p {
+    color: #bbb;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Buttons */
+button, a.button {
+    background: #1dbf73; /* Bright green */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover, a.button:hover {
+    background: #14a865; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #999;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #1dbf73;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    section#about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section#about img {
+        margin: 2rem 0;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projects .project {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
