@@ -30,6 +30,10 @@ const contactSchema = new mongoose.Schema({
 // Create Contact model
 const Contact = mongoose.model('Contact', contactSchema);
 
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
+
 // POST route to handle contact form submissions
 app.post('/submit-contact', async (req, res) => {
     const { name, email, message } = req.body;
